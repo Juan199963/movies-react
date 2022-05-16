@@ -18,8 +18,8 @@ export function App(){
                 Peliculas
             </h1>
             </Link>
-            <Link to = "/">Home</Link>
-            <Link to = "/movie">Movie</Link>
+            {/* <Link to = "/">Home</Link>
+            <Link to = "/movie">Movie</Link> */}
         </header>
         <main>
             <Switch>
