@@ -37,7 +37,9 @@ export function MovieDetails(){
     }
 
 
-    const imgURL = "https://image.tmdb.org/t/p/w300" + movie.poster_path
+    const imgURL = movie.poster_path 
+    ? "https://image.tmdb.org/t/p/w500" + movie.poster_path 
+    : "https://st2.depositphotos.com/1020091/48323/v/600/depositphotos_483239438-stock-illustration-icon-of-photo-film-drying.jpg";
     return <div className={styles.detailsContainer}>
         <img src={imgURL} alt={movie.title} className = {styles.col + " "+ styles.movieImg}/>
         <div className={styles.col + " "+ styles.movieDetails}>
@@ -47,6 +49,7 @@ export function MovieDetails(){
                 {movie.genres.map(genre => genre.name).join(" ")}
             </p>
             <p><strong>Descripcion: </strong>{movie.overview}</p>
+            <p><strong>Fecha de Lanzamiento: </strong>{movie.release_date}</p>
 
         </div>
     </div>

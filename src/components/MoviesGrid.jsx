@@ -7,6 +7,7 @@ import styles from "./MoviesGrid.module.css"
 import { Spinner } from "./Spinner";
 import {useQuery} from "../hooks/useQuery.jsx"
 import InfiniteScroll from "react-infinite-scroll-component";
+import { Empty } from "./Empty";
 
 
 
@@ -38,6 +39,9 @@ export function MoviesGrid({ search }){
             });
     }, [search,page]);
     
+    if (!isLoading && movies.length === 0){
+        return <Empty/>;
+    }
     // if(isLoading){
     //     return <Spinner/>;
     // }

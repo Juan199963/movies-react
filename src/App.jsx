@@ -15,13 +15,13 @@ export function App(){
         <header>
             <Link to ="/">
             <h1 className={styles.title}>
-                Peliculas
+                PELICULAS
             </h1>
             </Link>
             {/* <Link to = "/">Home</Link>
             <Link to = "/movie">Movie</Link> */}
         </header>
-        <main>
+        <main className={styles.container}>
             <Switch>
                 <Route exact path="/movie/:movieId"><MovieDetails/></Route>
                 <Route path="/"><LandingPage/></Route>
