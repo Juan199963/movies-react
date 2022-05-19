@@ -1,4 +1,4 @@
-import { MoviesGrid } from "./components/MoviesGrid.jsx";
+
 import styles from "./App.module.css"
 import React from "react";
 import {
