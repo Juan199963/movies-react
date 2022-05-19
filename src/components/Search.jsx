@@ -6,6 +6,7 @@ import {useQuery} from "../hooks/useQuery";
 
 
 export function Search() {
+    
     const query = useQuery();
     const search = query.get("search"); 
 
@@ -25,7 +26,12 @@ export function Search() {
     return (
         <form className={styles.searchContainer}  onSubmit={handleSubmit}>
             <div className={styles.searchBox}>
-                <input type="text" className={styles.searchInput} value ={searchText} onChange={(e)=> setSearchText(e.target.value.toUpperCase())}/>
+                <input type="text" className={styles.searchInput} value ={searchText} 
+                onChange={(e)=>{
+                    setSearchText(e.target.value);
+
+                } }/>
+             
                 <button type="submit" className={styles.searchButton}>
                     <FaSearch size = {20}/>
                 </button>
