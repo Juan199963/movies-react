@@ -1,3 +1,17 @@
+GALERIA DE PELICULAS
+
+EXPLICACION DEL PROYECTO: 
+El presente proyecto es una aplicacion de peliculas realizada con React.js, habilitandose la creacion de hooks, y con funcionalidades como Debounce en el menu de busquedas y scroll infito, ademas de contar con un spinner. Este proyecto se conecta al API https://www.themoviedb.org/
+
+
+VIDEO DE PRESENTACION:
+https://www.youtube.com/watch?v=YpYr7GCwjLs
+
+STACK TECNOLOGICO:
+React.js ^ React_router ^Javascript ^ HTML ^ CSS ^ Node.js
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
